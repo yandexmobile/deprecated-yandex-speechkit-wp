@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechKitSample", "SpeechKitSample\SpeechKitSample.csproj", "{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechKitGUISample", "SpeechKitGUISample\SpeechKitGUISample.csproj", "{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Release|ARM = Release|ARM
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}.Debug|ARM.Build.0 = Debug|ARM
+		{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}.Release|ARM.ActiveCfg = Release|ARM
+		{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}.Release|ARM.Build.0 = Release|ARM
+		{F2780170-84C4-4F01-A8D1-12F06FA7A9B9}.Release|ARM.Deploy.0 = Release|ARM
+		{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}.Debug|ARM.Build.0 = Debug|ARM
+		{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}.Release|ARM.ActiveCfg = Release|ARM
+		{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}.Release|ARM.Build.0 = Release|ARM
+		{E9D2AE53-E39F-4A4F-9067-BD5401ABCE64}.Release|ARM.Deploy.0 = Release|ARM
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

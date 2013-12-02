@@ -1,0 +1,74 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Yandex.SpeechKit.Demo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"
+    Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <Grid Background="Transparent">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition  />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="YANDEX.SPEECHKIT DEMO"
+                   Style="{StaticResource PhoneTextNormalStyle}"
+                   FontFamily="{StaticResource PhoneFontFamilySemiBold}"
+                   Margin="24,17,24,28" />
+       
+        <StackPanel Grid.Row="1"
+                    Orientation="Vertical"
+                    Margin="12">
+            <Button Content="Start Recognition"
+                    Command="{Binding StartRecognitionCommand}" />
+            <Button Content="Stop Recording"
+                    Command="{Binding FinishRecordingCommand}" />
+            <Button Content="Cancel Recognition"
+                    Command="{Binding CancelRecognitionCommand}" />
+        </StackPanel>
+
+        <ProgressBar Grid.Row="2"
+                     Maximum="1"
+                     Minimum="0"
+                     Value="{Binding Power}"
+                     Margin="12,0" />
+
+        <Grid Grid.Row="3"
+              Background="{StaticResource PhoneAccentBrush}"
+              Margin="0,12">
+            <TextBlock FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                       FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                       Foreground="White"
+                       Margin="24,6"
+                       Text="{Binding Status}"
+                       TextWrapping="Wrap" />
+        </Grid>
+
+        <phone:LongListSelector Grid.Row="4"
+                                ItemsSource="{Binding Results}"
+                                Margin="24,0">
+            <phone:LongListSelector.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                               FontSize="{StaticResource PhoneFontSizeMediumLarge}"
+                               Margin="0,12"
+                               Text="{Binding}"
+                               TextWrapping="Wrap" />
+                </DataTemplate>
+            </phone:LongListSelector.ItemTemplate>
+        </phone:LongListSelector>
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>
