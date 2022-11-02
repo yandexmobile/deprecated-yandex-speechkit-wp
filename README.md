@@ -1,3 +1,5 @@
+**UPDATE The project is outdated. To integrate with SpeechKit use gRPC and REST API from https://cloud.yandex.ru/docs/speechkit/**
+
 Yandex SpeechKit for Windows Phone
 ========================
 
